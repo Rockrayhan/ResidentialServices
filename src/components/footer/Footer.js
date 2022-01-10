@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container-fluid text-center text-md-left">
         <div className="row">
           <div className="col-md-6 mt-md-0 mt-3">
-            <h5 className="text-uppercase">Bangla Bikers</h5>
+            <h5 className="text-uppercase">Residential Services</h5>
             <h6 className="text-success">About Us!</h6>
             <p>
               A bad day on a mountain bike always beats a good day in the

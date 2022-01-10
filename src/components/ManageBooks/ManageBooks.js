@@ -38,7 +38,7 @@ const ManageBooks = () => {
   const deleteTicket = (id) => {
     const confirmation = window.confirm("are you sure want to delete?");
     if (confirmation) {
-      const url = `https://evening-meadow-55666.herokuapp.com/myOrders/${id}`;
+      const url = `http://localhost:5000/myOrders/${id}`;
       fetch(url, {
         method: "DELETE",
       })
