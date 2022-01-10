@@ -8,7 +8,7 @@ const MakeAdmin = () => {
   };
   const handelSubmit = (e) => {
     const user = { email };
-    fetch("https://evening-meadow-55666.herokuapp.com/make/admin", {
+    fetch("http://localhost:5000/make/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",
