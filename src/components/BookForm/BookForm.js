@@ -17,7 +17,7 @@ const BookForm = () => {
   const [pack, setPack] = useState({});
   const { name, description, image, price } = pack;
   useEffect(() => {
-    fetch(`https://evening-meadow-55666.herokuapp.com/productBy/${id}`)
+    fetch(`http://localhost:5000/productBy/${id}`)
       .then((res) => res.json())
       .then((data) => setPack(data));
   }, [id]);
