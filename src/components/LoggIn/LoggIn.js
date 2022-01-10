@@ -33,7 +33,7 @@ const LoggIn = () => {
 
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch("http://localhost:5000/users", {
+    fetch("https://lit-tor-54339.herokuapp.com/users", {
       method: method,
       headers: {
         "content-type": "application/json",
@@ -48,29 +48,29 @@ const LoggIn = () => {
     /* if registerd user, button will call login function, or will call signup function */
     registerd
       ? loginUser(email, password)
-          .then((result) => {
-            setUser(result.user);
-            setError("");
-            history.push(redirect_url);
-            setIsLoading(false);
-          })
-          .catch((err) => {
-            setError(err.message);
-          })
+        .then((result) => {
+          setUser(result.user);
+          setError("");
+          history.push(redirect_url);
+          setIsLoading(false);
+        })
+        .catch((err) => {
+          setError(err.message);
+        })
       : /* here will call signed function */
-        createUser(email, password, name)
-          .then((result) => {
-            saveUser(email, name, "POST");
-            setUser(result.user);
-            updateName(name);
-            setError("");
-            verifyEmail();
-            history.push(redirect_url);
-            setIsLoading(false);
-          })
-          .catch((err) => {
-            setError(err.message);
-          });
+      createUser(email, password, name)
+        .then((result) => {
+          saveUser(email, name, "POST");
+          setUser(result.user);
+          updateName(name);
+          setError("");
+          verifyEmail();
+          history.push(redirect_url);
+          setIsLoading(false);
+        })
+        .catch((err) => {
+          setError(err.message);
+        });
   };
   /* there will store user inputed name, email, and password*/
   const emailhandle = (e) => {

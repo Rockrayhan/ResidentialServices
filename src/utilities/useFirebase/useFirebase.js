@@ -43,7 +43,7 @@ const useFirebase = () => {
   }, [auth]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${user.email}`)
+    fetch(`https://lit-tor-54339.herokuapp.com/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setAdmin(data.admin);
@@ -91,7 +91,7 @@ const useFirebase = () => {
   /* update name process  */
   const updateName = (name) => {
     updateProfile(auth.currentUser, { displayName: name })
-      .then(() => {})
+      .then(() => { })
       .catch((err) => {
         setError(err.message);
       });

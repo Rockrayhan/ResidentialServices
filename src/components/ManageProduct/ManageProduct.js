@@ -7,7 +7,7 @@ const ManageProduct = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setIsLoading(true);
-    fetch("http://localhost:5000/packages")
+    fetch("https://lit-tor-54339.herokuapp.com/packages")
       .then((res) => res.json())
       .then((data) => {
         setPackages(data);
@@ -21,7 +21,7 @@ const ManageProduct = () => {
     const confirm = window.confirm("are you sure want to delete?");
 
     if (confirm) {
-      const url = `http://localhost:5000/product/delete/${id}`;
+      const url = `https://lit-tor-54339.herokuapp.com/product/delete/${id}`;
       fetch(url, {
         method: "DELETE",
       })
