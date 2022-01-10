@@ -8,7 +8,7 @@ const MyOrders = () => {
   const { user } = useAuth();
   const [myOrders, setMyOrders] = useState([]);
   const email = user.email;
-  const url = `http://localhost:5000/user/${email}`;
+  const url = `https://lit-tor-54339.herokuapp.com/user/${email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -23,7 +23,7 @@ const MyOrders = () => {
   const deleteOrder = (id) => {
     const confirmation = window.confirm("are you sure want to delete?");
     if (confirmation) {
-      const url = `http://localhost:5000/myOrders/${id}`;
+      const url = `https://lit-tor-54339.herokuapp.com/myOrders/${id}`;
       fetch(url, {
         method: "DELETE",
       })

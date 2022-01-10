@@ -17,7 +17,7 @@ const BookForm = () => {
   const [pack, setPack] = useState({});
   const { name, description, image, price } = pack;
   useEffect(() => {
-    fetch(`http://localhost:5000/productBy/${id}`)
+    fetch(`https://lit-tor-54339.herokuapp.com/productBy/${id}`)
       .then((res) => res.json())
       .then((data) => setPack(data));
   }, [id]);
@@ -40,7 +40,7 @@ const BookForm = () => {
       pack,
       isPending,
     };
-    fetch("http://localhost:5000/orders", {
+    fetch("https://lit-tor-54339.herokuapp.com/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

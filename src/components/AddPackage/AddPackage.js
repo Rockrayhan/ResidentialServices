@@ -22,7 +22,7 @@ const AddPackage = () => {
       status: true,
     };
 
-    fetch("http://localhost:5000/addPackage", {
+    fetch("https://lit-tor-54339.herokuapp.com/addPackage", {
       method: "POST",
       headers: {
         "content-type": "application/json",
