@@ -40,7 +40,7 @@ const BookForm = () => {
       pack,
       isPending,
     };
-    fetch("https://evening-meadow-55666.herokuapp.com/orders", {
+    fetch("http://localhost:5000/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",
