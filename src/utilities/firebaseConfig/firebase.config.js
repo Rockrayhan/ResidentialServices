@@ -1,11 +1,12 @@
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSING_SENDER_ID,
-  appId: process.env.REACT_APP_APP_ID,
+  apiKey: "AIzaSyDoQdH5Rs17p_6QcQk0kgQ-nvSICq1i5KU",
+  authDomain: "residentail-services.firebaseapp.com",
+  projectId: "residentail-services",
+  storageBucket: "residentail-services.appspot.com",
+  messagingSenderId: "676864388040",
+  appId: "1:676864388040:web:6f5e606de0c45b2161aefd"
 };
 
 export default firebaseConfig;
