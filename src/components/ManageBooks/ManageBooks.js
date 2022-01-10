@@ -8,7 +8,7 @@ const ManageBooks = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setIsLoading(true);
-    fetch(`https://evening-meadow-55666.herokuapp.com/tickets`)
+    fetch(`http://localhost:5000/tickets`)
       .then((res) => res.json())
       .then((data) => setTickets(data))
       .finally(() => {
@@ -18,7 +18,7 @@ const ManageBooks = () => {
 
   const updateStatus = (id) => {
     const bool = { status: false };
-    fetch(`https://evening-meadow-55666.herokuapp.com/update/${id}`, {
+    fetch(`http://localhost:5000/update/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

@@ -7,7 +7,7 @@ const ManageProduct = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setIsLoading(true);
-    fetch("https://evening-meadow-55666.herokuapp.com/packages")
+    fetch("http://localhost:5000/packages")
       .then((res) => res.json())
       .then((data) => {
         setPackages(data);
@@ -21,7 +21,7 @@ const ManageProduct = () => {
     const confirm = window.confirm("are you sure want to delete?");
 
     if (confirm) {
-      const url = `https://evening-meadow-55666.herokuapp.com/product/delete/${id}`;
+      const url = `http://localhost:5000/product/delete/${id}`;
       fetch(url, {
         method: "DELETE",
       })
