@@ -17,8 +17,6 @@ const Banner = () => {
                          
                          <Carousel.Caption>
                              <h3 className="display-2 fw-bold text-white">Chitchen Interior Services</h3>
-                              <h3 className="textDe">CHOICE</h3>
-                              {/* <a href="#tours-section" className="btn btn-light px-4 py-2">Book Now</a> */}
                          </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className="h-100">
@@ -30,8 +28,6 @@ const Banner = () => {
                          />
                          <Carousel.Caption>
                               <h3 className="display-2 fw-bold text-white">Architecture Services</h3>
-                              <h3 className="textDe">DESIRE</h3>
-                              {/* <a href="#tours-section"  className="btn btn-light px-4 py-2">Book Now</a> */}
                          </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className="h-100">
@@ -43,8 +39,6 @@ const Banner = () => {
                          />
                          <Carousel.Caption>
                               <h3 className="display-2 fw-bold text-white">Interior Design Services</h3>
-                              <h3 className="textDe">HAPPY</h3>
-                              {/* <a href="#tours-section" className="btn btn-light px-4 py-2">Book Now</a> */}
                          </Carousel.Caption>
                     </Carousel.Item>
                </Carousel>
