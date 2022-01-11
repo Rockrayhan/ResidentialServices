@@ -6,14 +6,29 @@ const Footer = () => {
       <div className="container-fluid text-center text-md-left">
         <div className="row">
           <div className="col-md-6 mt-md-0 mt-3">
-            <h5 className="text-uppercase">Residential Services</h5>
-            <h6 className="text-success">About Us!</h6>
-            <p>
-              A bad day on a mountain bike always beats a good day in the
-              office. If you want to be happy for a day, if you want to be happy
-              for a year, Marry. If you want to be happy for a lifetime, Ride a
-              Bike.
-            </p>
+          <h5 className="text-uppercase">Residentail Services</h5>
+            <ul className="list-unstyled">
+              <li>
+                <a style={{ textDecoration: "none" }} href="#!">
+                 Find Pros
+                </a>
+              </li>
+              <li>
+                <a style={{ textDecoration: "none" }} href="#!">
+                  Browse Pro Directory
+                </a>
+              </li>
+              <li>
+                <a style={{ textDecoration: "none" }} href="#!">
+                  Fixed Price Services
+                </a>
+              </li>
+              <li>
+                <a style={{ textDecoration: "none" }} href="#!">
+                 Savings and Discounts
+                </a>
+              </li>
+            </ul>
           </div>
 
           <hr className="clearfix w-100 d-md-none pb-0" />
