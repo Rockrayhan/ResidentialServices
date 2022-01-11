@@ -2,7 +2,7 @@ import React from "react";
 /* this is the component for footer. */
 const Footer = () => {
   return (
-    <footer className=" bg-dark text-white page-footer font-small blue pt-4">
+    <footer className="bg-footer page-footer font-small blue pt-4" style={{backgroundColor:"#191d3a", color: "#fff"}}>
       <div className="container-fluid text-center text-md-left">
         <div className="row">
           <div className="col-md-6 mt-md-0 mt-3">
@@ -88,8 +88,8 @@ const Footer = () => {
       </div>
 
       <div className="footer-copyright text-center py-3">
-        © 2021 Copyright:
-        <h6>Md. Walid Bin Jashim</h6>
+        ©2021 Copyright:
+        <h6>Residentail Services</h6>
       </div>
     </footer>
   );

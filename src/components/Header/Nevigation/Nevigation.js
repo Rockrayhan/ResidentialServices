@@ -13,7 +13,7 @@ const Nevigation = () => {
   };
   return (
     <>
-      <Navbar bg="dark" expand="lg" variant="dark" sticky="top">
+      <Navbar expand="lg" variant="dark" sticky="top" style={{backgroundColor:"#191d3a", color: "#fff"}}>
         <Container>
           <Navbar.Brand>
             {" "}
