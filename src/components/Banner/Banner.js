@@ -47,19 +47,6 @@ const Banner = () => {
                               {/* <a href="#tours-section" className="btn btn-light px-4 py-2">Book Now</a> */}
                          </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item className="h-100">
-                         <div className="overlay"></div>
-                         <img
-                              className="d-block w-100"
-                              src="https://i.ibb.co/Jy4XGxs/cover5.jpg"
-                              alt="Third slide"
-                         />
-                         <Carousel.Caption>
-                              <h3 className="display-2 fw-bold text-white">CHOOSE YOUR BEST</h3>
-                              <h3 className="textDe">PRODUCTS</h3>
-                              {/* <a href="#tours-section" className="btn btn-light px-4 py-2">Book Now</a> */}
-                         </Carousel.Caption>
-                    </Carousel.Item>
                </Carousel>
           </section>
      );
