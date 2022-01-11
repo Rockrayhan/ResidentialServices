@@ -1,0 +1,52 @@
+[debug] [2022-01-11T15:34:57.748Z] ----------------------------------------------------------------------
+[debug] [2022-01-11T15:34:57.752Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sawat\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-11T15:34:57.753Z] CLI Version:   10.0.1
+[debug] [2022-01-11T15:34:57.753Z] Platform:      win32
+[debug] [2022-01-11T15:34:57.753Z] Node Version:  v14.17.6
+[debug] [2022-01-11T15:34:57.754Z] Time:          Tue Jan 11 2022 21:34:57 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-01-11T15:34:57.754Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-11T15:34:57.822Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-11T15:34:57.823Z] > authorizing via signed-in user (davidbasser88@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Projects2\Residentail-Services
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-11T15:35:06.475Z] Using project from CLI flag: jaguar-authentication
+[debug] [2022-01-11T15:35:06.477Z] > refreshing access token with scopes: []
+[debug] [2022-01-11T15:35:06.478Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-11T15:35:06.732Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 11 Jan 2022 15:35:06 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-11T15:35:06.919Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jaguar-authentication [none]
+[debug] [2022-01-11T15:35:07.486Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jaguar-authentication 403
+[debug] [2022-01-11T15:35:07.487Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jaguar-authentication {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-01-11T15:35:07.488Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-01-11T15:35:07.879Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\sawat\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\sawat\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\sawat\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\sawat\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\sawat\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:85:27)
+    at async init (C:\Users\sawat\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project jaguar-authentication. Please make sure the project exists and your account has permission to access it.
