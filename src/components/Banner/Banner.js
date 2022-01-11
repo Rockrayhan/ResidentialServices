@@ -16,7 +16,7 @@ const Banner = () => {
                          />
                          
                          <Carousel.Caption>
-                             <h3 className="display-2 fw-bold text-white">SHOPPING IS MY FIRST</h3>
+                             <h3 className="display-2 fw-bold text-white">Chitchen Interior Services</h3>
                               <h3 className="textDe">CHOICE</h3>
                               {/* <a href="#tours-section" className="btn btn-light px-4 py-2">Book Now</a> */}
                          </Carousel.Caption>
