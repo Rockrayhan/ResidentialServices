@@ -4,7 +4,6 @@ import useAuth from "../../../utilities/context/useAuth";
 import "./Navigation.css";
 import { HashLink } from "react-router-hash-link";
 
-
 /* you might khow the component, yes this is navigation bar to navigate all  */
 const Nevigation = () => {
   const { user, logOut } = useAuth();
@@ -56,7 +55,7 @@ const Nevigation = () => {
 
               {user.email && (
                 <Navbar.Text>
-                  Signed in as:
+                  Signed in
                   <span className="ms-2 text-white fw-bold">
                     {user?.displayName}
                   </span>

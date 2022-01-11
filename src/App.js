@@ -12,6 +12,7 @@ import PageNotFound from "./components/pageNotFound/PageNotFound";
 import Dashboard from "./components/Dashboard/Dashboard";
 import MyOrders from "./components/MyOrders/MyOrders";
 import Explore from "./components/Explore/Explore";
+import Banner from "./components/Banner/Banner";
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
             <Route path="/home">
               {" "}
               <Home></Home>
+            </Route>
+            <Route path="/banner">
+              {" "}
+              <Banner></Banner>
             </Route>
             <Route path="/booked">
               <OPlased></OPlased>
