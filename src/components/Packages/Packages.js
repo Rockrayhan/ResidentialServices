@@ -25,11 +25,8 @@ const Packages = () => {
           <Spinner animation="border" variant="dark" />
         </div>
       ) : (
-        <Container className="mt-4">
-          <hr className="border-bottom border border-dark border-3" />
-          <h2 className="text-center text-success my-5">Our Best Packages</h2>          
-          <h3 className="text-start mb-5">Browse by Category</h3>
-
+        <Container className="mt-4">      
+          <h3 className="text-start mb-5">All Category</h3>
           <ul className="category">
             <li className="single-li">Everyday services</li>
             <li className="single-li">Outdoor</li>
@@ -37,7 +34,7 @@ const Packages = () => {
             <li className="single-li">Interior</li>
             <li className="single-li">Renovation</li>
           </ul>
-
+          <hr className="border-bottom border border-dark border-3 mb-4" />   
           <Row className="g-4 mb-5">
             {packages.slice(0, 6).map((pkg) => (
               <Package key={pkg._id} package={pkg}></Package>
