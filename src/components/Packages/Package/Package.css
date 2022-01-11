@@ -2,10 +2,14 @@
 .category{
     text-decoration: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .single-li{
-    padding: 10px;
+    padding: 7px 18px;
     text-decoration: none;
     color: red;
+    background-color: #e5dcdc;
+    margin: 8px 16px;
+    border-radius: 5px;
 }
