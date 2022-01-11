@@ -1,1 +1,11 @@
 
+.category{
+    text-decoration: none;
+    display: flex;
+}
+
+.single-li{
+    padding: 10px;
+    text-decoration: none;
+    color: red;
+}

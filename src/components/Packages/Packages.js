@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Spinner } from "react-bootstrap";
 import Package from "./Package/Package";
+import "./Package/Package.css";
+
 const Packages = () => {
   const [packages, setPackages] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -25,7 +27,16 @@ const Packages = () => {
       ) : (
         <Container className="mt-4">
           <hr className="border-bottom border border-dark border-3" />
-          <h2 className="text-center text-success my-5">Our Best Packages</h2>
+          <h2 className="text-center text-success my-5">Our Best Packages</h2>          
+          <h3 className="text-start mb-5">Browse by Category</h3>
+
+          <ul className="category">
+            <li className="single-li">Everyday services</li>
+            <li className="single-li">Outdoor</li>
+            <li className="single-li">Exterior</li>
+            <li className="single-li">Interior</li>
+            <li className="single-li">Renovation</li>
+          </ul>
 
           <Row className="g-4 mb-5">
             {packages.slice(0, 6).map((pkg) => (
